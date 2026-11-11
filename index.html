@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ênfase | Marca, sites e anúncios</title>
+  <meta name="description" content="Ênfase. Marca, sites, lojas e anúncios com visual em amarelo e azul, e um caminho direto até o contato.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Michroma&family=Nunito:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    try {
+      const theme = localStorage.getItem("theme");
+      const prefersDark = matchMedia("(prefers-color-scheme: dark)").matches;
+      if (theme === "light" || (!theme && !prefersDark)) document.documentElement.classList.remove("dark");
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="nav-shell">
+        <a class="brand" href="#hero" aria-label="Ênfase">
+          <svg class="mark" width="46" height="46" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#f2c21a"/>
+            <circle cx="32" cy="32" r="29" fill="none" stroke="#ffffff" stroke-width="2.4"/>
+            <text x="31" y="45" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="#1e4ed8">e</text>
+            <path fill="#1e4ed8" d="M36.5 11.5 54 18.2 36.5 26.2 41.6 18.4z"/>
+          </svg>
+          <small>ENFASE</small>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#criativos">Criativos</a></li>
+          <li><a href="#redes">Redes Sociais</a></li>
+          <li><a href="#sites">Portfólio</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn-gold" href="#contato"><span>Solicitar diagnóstico</span></a></li>
+        </ul>
+        <button class="menu-btn" id="open-menu" aria-label="Abrir menu">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" inert>
+    <div class="mobile-top">
+      <svg width="42" height="42" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#f2c21a"/>
+        <circle cx="32" cy="32" r="29" fill="none" stroke="#fff" stroke-width="2.4"/>
+        <text x="31" y="45" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="#1e4ed8">e</text>
+        <path fill="#1e4ed8" d="M36.5 11.5 54 18.2 36.5 26.2 41.6 18.4z"/>
+      </svg>
+      <button class="icon-btn" id="close-menu" aria-label="Fechar menu">✕</button>
+    </div>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#criativos">Criativos</a>
+      <a href="#redes">Redes Sociais</a>
+      <a href="#sites">Portfólio</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#blog">Blog</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-gold" href="#contato"><span>Falar com a equipe</span></a>
+  </div>
+
+  <main>
+    <section class="hero dots" id="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>
+            <span class="hero-slide is-active" data-hero="0">Marca e páginas <span class="grad">que apresentam<br>e vendem por você</span>.</span>
+            <span class="hero-slide" data-hero="1">Sistemas sob medida <span class="grad">para o ritmo<br>do seu negócio</span>.</span>
+            <span class="hero-slide" data-hero="2">Anúncios claros <span class="grad">para transformar<br>atenção em contato</span>.</span>
+          </h1>
+          <div>
+            <p class="lead muted hero-slide is-active" data-hero="0">Sites, identidade e peças no mesmo tom: a pessoa entende a oferta, confia no visual e encontra um caminho curto até a mensagem.</p>
+            <p class="lead muted hero-slide" data-hero="1">Painéis, agendas e automações desenhados em volta da rotina da equipe, ligados às ferramentas que vocês já usam no dia a dia.</p>
+            <p class="lead muted hero-slide" data-hero="2">Campanhas com oferta legível, visual consistente e um pedido de ação que não compete com o restante da peça.</p>
+          </div>
+          <div class="hero-dots" role="group" aria-label="Destaques">
+            <button class="hero-dot is-active" type="button" data-dot="0" aria-label="Ver destaque 1 de 3"></button>
+            <button class="hero-dot" type="button" data-dot="1" aria-label="Ver destaque 2 de 3"></button>
+            <button class="hero-dot" type="button" data-dot="2" aria-label="Ver destaque 3 de 3"></button>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-gold" href="#contato"><span>Falar no WhatsApp</span></a>
+            <a class="btn btn-glass" href="#metodo"><span>Ver como funciona</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="glow"></div>
+          <svg class="logo-lg" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="30" fill="#f2c21a"/>
+            <circle cx="32" cy="32" r="29" fill="none" stroke="#fff" stroke-width="2.2"/>
+            <text x="31" y="45" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="#1e4ed8">e</text>
+            <path fill="#1e4ed8" d="M36.5 11.5 54 18.2 36.5 26.2 41.6 18.4z"/>
+          </svg>
+          <span class="chip a"><i style="background:#f2c21a"></i> CLAREZA</span>
+          <span class="chip b"><i style="background:#4c7dff"></i> ENTREGA</span>
+          <span class="chip c"><i style="background:#1e4ed8"></i> CONVERSÃO</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span><b>●</b> Desenvolvimento</span>
+        <span><b style="color:#4c7dff">●</b> Design</span>
+        <span><b>●</b> Vídeo e motion</span>
+        <span><b style="color:#1e4ed8">●</b> Anúncios</span>
+        <span><b>●</b> Desenvolvimento</span>
+        <span><b style="color:#4c7dff">●</b> Design</span>
+        <span><b>●</b> Vídeo e motion</span>
+        <span><b style="color:#1e4ed8">●</b> Anúncios</span>
+      </div>
+    </div>
+
+    <section class="section bg" id="prova">
+      <div class="wrap split">
+        <div>
+          <h2>Crescer com calma pede <span class="grad">método</span>.</h2>
+          <p class="muted" style="margin-top:18px">Organizamos a base antes de acelerar: mensagem direta, visual profissional, página bem construída e números que a equipe consegue ler. O interesse vira conversa, pedido ou visita marcada.</p>
+          <div class="stats">
+            <article class="card stat"><span>Projetos entregues</span><strong>+120</strong></article>
+            <article class="card stat"><span>Satisfação</span><strong>95%</strong></article>
+            <article class="card stat"><span>Experiência</span><strong>+6 anos</strong></article>
+            <article class="card stat"><span>Segmentos</span><strong>8+</strong></article>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="card feature"><h3>Mensagem clara</h3><p class="muted">Quem chega entende o que você faz, para quem é e qual é o próximo passo.</p></article>
+          <article class="card feature"><h3>Site leve</h3><p class="muted">Abre rápido no celular e no computador e conduz até a mensagem, o orçamento ou a compra.</p></article>
+          <article class="card feature"><h3>Medição simples</h3><p class="muted">Visitas, cliques e conversas ficam visíveis, sem painel que só a agência entende.</p></article>
+          <article class="card feature"><h3>Processo direto</h3><p class="muted">Etapas combinadas, prazo na mesa e atualização objetiva em cada entrega.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-2 rule" id="problemas">
+      <div class="wrap">
+        <div class="center">
+          <h2>Onde o caminho se perde, a gente organiza.</h2>
+          <p class="muted">Quando a oferta está difusa e a página não ajuda, a visita acontece e a conversa não. O ajuste começa pela clareza.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="card problem"><span class="num">01</span><h3>Muita visita, pouca mensagem</h3><p class="muted">A pessoa entra e não sabe o que fazer. Ajustamos texto, ordem das seções e o pedido de ação.</p></article>
+          <article class="card problem"><span class="num">02</span><h3>Visual bonito, navegação confusa</h3><p class="muted">Deixamos o caminho curto: prova, informação essencial e um contato óbvio.</p></article>
+          <article class="card problem"><span class="num">03</span><h3>Falta de credibilidade</h3><p class="muted">Identidade e tom de voz alinhados para a marca parecer tão sólida quanto o serviço.</p></article>
+          <article class="card problem"><span class="num">04</span><h3>Resultado no escuro</h3><p class="muted">Medimos o que gera contato e compra para a próxima decisão ter base, não palpite.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-2" id="servicos">
+      <div class="wrap">
+        <div class="services-head">
+          <div>
+            <p class="eyebrow">O que fazemos</p>
+            <h2 style="margin-top:12px">Serviços com foco em clareza e resultado</h2>
+          </div>
+          <a class="btn btn-gold" href="#contato"><span>Solicitar diagnóstico</span></a>
+        </div>
+        <div class="service-grid" style="margin-top:28px">
+          <article class="card service">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M8 13c1.2 1.4 2.4 2 4 2s2.8-.6 4-2"/></svg>
+            </div>
+            <h3 class="display" style="font-size:18px;line-height:1.35">Marca e identidade</h3>
+            <p class="muted">Um visual que transmite valor antes da primeira conversa e se mantém igual no site, no anúncio e no perfil.</p>
+            <div class="tags"><span>Logo</span><span>Paleta</span><span>Tom de voz</span></div>
+            <a class="linkish" href="#contato">Solicitar diagnóstico</a>
+          </article>
+          <article class="card service">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+            </div>
+            <h3 class="display" style="font-size:18px;line-height:1.35">Sites e lojas virtuais</h3>
+            <p class="muted">Presença que recebe a pessoa certa e a leva até o contato ou o checkout, sem desvio no meio do caminho.</p>
+            <div class="tags"><span>Institucional</span><span>Landing</span><span>Loja</span></div>
+            <a class="linkish" href="#contato">Solicitar diagnóstico</a>
+          </article>
+          <article class="card service">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h10M4 17h13"/></svg>
+            </div>
+            <h3 class="display" style="font-size:18px;line-height:1.35">Anúncios e criativos</h3>
+            <p class="muted">Peças que seguram o olhar, explicam a oferta e pedem uma ação só, do feed ao tráfego pago.</p>
+            <div class="tags"><span>Feed</span><span>Stories</span><span>Campanha</span></div>
+            <a class="linkish" href="#contato">Solicitar diagnóstico</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg rule" id="redes">
+      <div class="wrap">
+        <article class="card band-card">
+          <div>
+            <p class="eyebrow">Gerenciamento de redes sociais</p>
+            <h2 style="margin-top:12px">Conteúdo com ritmo que vira mensagem e pedido.</h2>
+            <p class="muted" style="margin-top:14px">Um plano enxuto para negócio local ou digital: clareza na oferta, constância no calendário, prova do trabalho e um convite para conversar.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-gold" href="#contato"><span>Falar com a equipe</span></a>
+            <a class="btn btn-glass" href="#criativos"><span>Ver detalhes</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section bg dots rule" id="criativos">
+      <div class="wrap creative-grid">
+        <div>
+          <p class="eyebrow">Criativos para anúncios e redes</p>
+          <h2 style="margin-top:14px">Peças que deixam a oferta fácil de entender.</h2>
+          <p class="muted" style="margin-top:16px">Design, texto e direção visual no mesmo briefing, para o feed, o story, o carrossel ou a campanha de tráfego.</p>
+          <div class="points">
+            <div class="point"><h3>Oferta clara</h3><p class="muted">O público lê rápido o que você vende e por que isso importa agora.</p></div>
+            <div class="point"><h3>Visual consistente</h3><p class="muted">A mesma linguagem na marca, na campanha e no anúncio.</p></div>
+            <div class="point"><h3>Foco em ação</h3><p class="muted">Cada peça nasce para clique, conversa, pedido ou decisão.</p></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-gold" href="#contato"><span>Falar no WhatsApp</span></a>
+            <a class="btn btn-glass" href="#sites"><span>Conhecer trabalhos</span></a>
+          </div>
+        </div>
+        <div class="ad-stack">
+          <article class="ad"><em>Feed · 4:5</em><strong>Oferta em uma frase, prova embaixo.</strong></article>
+          <article class="ad" style="background:linear-gradient(145deg,#1e4ed8,#0c1838)"><em>Story · 9:16</em><strong>Um benefício, um gesto, um botão.</strong></article>
+          <article class="ad" style="background:linear-gradient(145deg,#f2c21a,#d9a40a);color:#10245c"><em>Anúncio · 1:1</em><strong>Amarelo da marca, azul da ação.</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg rule" id="metodo">
+      <div class="wrap">
+        <div class="center">
+          <h2>Como trabalhamos: clareza, base e ajuste contínuo</h2>
+          <p class="muted">Um percurso curto para sair do improviso e manter constância sem complicar a operação.</p>
+        </div>
+        <div class="method-grid">
+          <div class="steps">
+            <article class="card step"><span class="big">01</span><h3>Diagnóstico</h3><p class="muted">Entendemos o objetivo, o público e o que seria um bom resultado neste momento.</p></article>
+            <article class="card step"><span class="big">02</span><h3>Estratégia</h3><p class="muted">Organizamos a mensagem, as provas e o caminho até o contato ou a compra.</p></article>
+            <article class="card step"><span class="big">03</span><h3>Construção</h3><p class="muted">Página, site ou loja com texto direto e medição desde o primeiro dia no ar.</p></article>
+            <article class="card step"><span class="big">04</span><h3>Aquisição</h3><p class="muted">Peças e divulgação para atrair gente com interesse real, não só alcance.</p></article>
+            <article class="card step"><span class="big">05</span><h3>Otimização</h3><p class="muted">Ajustamos o que os números mostram, para aumentar pedido e cortar desperdício.</p></article>
+          </div>
+          <aside class="card practice">
+            <h3 class="display" style="font-size:16px">Como funciona na prática</h3>
+            <ol>
+              <li><b>1</b><span>Você conta o objetivo e o que precisa melhorar.</span></li>
+              <li><b>2</b><span>Definimos juntos o que será entregue e o prazo.</span></li>
+              <li><b>3</b><span>Você aprova texto e visual antes de publicar.</span></li>
+              <li><b>4</b><span>Colocamos no ar com a medição ligada.</span></li>
+              <li><b>5</b><span>Ajustamos com base no que as pessoas fazem.</span></li>
+              <li><b>6</b><span>Você sai com um próximo passo, sem lista solta.</span></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-2 rule" id="sites">
+      <div class="wrap">
+        <div class="center">
+          <h2>Sites, lojas e landing pages</h2>
+          <p class="muted">Passe o mouse na tela ou no celular para rolar a página. No toque, a rolagem começa sozinha. As páginas são fictícias.</p>
+        </div>
+        <div class="site-grid" id="project-grid"></div>
+        <div class="more-wrap">
+          <button class="more-btn" id="more-projects" type="button">Ver mais projetos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg rule" id="portfolio">
+      <div class="wrap split">
+        <div>
+          <h2>Portfólio e projetos</h2>
+          <p class="muted" style="margin-top:16px">Cada trabalho mostra o que importou: o objetivo, o que foi feito e como isso ajudou o negócio a ser entendido.</p>
+          <div class="expect-grid" style="margin-top:22px">
+            <article class="card expect"><h3>Objetivo</h3><p class="muted">O que o cliente precisava que a página resolvesse.</p></article>
+            <article class="card expect"><h3>Entrega</h3><p class="muted">Marca, site, loja ou peças, no escopo combinado.</p></article>
+            <article class="card expect"><h3>Efeito</h3><p class="muted">Contato mais claro, navegação mais curta, oferta mais legível.</p></article>
+          </div>
+        </div>
+        <div>
+          <h2>O que você pode esperar</h2>
+          <p class="muted" style="margin-top:16px">Sem promessa milagrosa. O foco é clareza, entrega bem feita e acompanhamento do que importa.</p>
+          <div class="feature-grid" style="margin-top:18px">
+            <article class="card feature"><h3>Prioridade</h3><p class="muted">Um plano simples: o que vem primeiro, o que espera e o motivo.</p></article>
+            <article class="card feature"><h3>Caminho de contato</h3><p class="muted">Site e comunicação deixam de enfeitar e passam a orientar a ação.</p></article>
+            <article class="card feature"><h3>Números úteis</h3><p class="muted">Visitas, cliques e mensagens para ajustar com segurança.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-2 rule" id="equipe">
+      <div class="wrap">
+        <div class="center">
+          <h2>Uma equipe para planejar e entregar</h2>
+          <p class="muted">Design, desenvolvimento e estratégia no mesmo projeto, com foco no que o cliente precisa entender para confiar.</p>
+        </div>
+        <div class="team-grid">
+          <article class="card team"><h3>Desenvolvimento</h3><p class="muted">Sites e sistemas com atenção a velocidade, segurança e estabilidade.</p></article>
+          <article class="card team"><h3>Marca</h3><p class="muted">Visual profissional e informação organizada, fácil de percorrer.</p></article>
+          <article class="card team"><h3>Sites e lojas</h3><p class="muted">Experiências rápidas no celular para transformar visita em mensagem.</p></article>
+          <article class="card team"><h3>Conteúdo</h3><p class="muted">Peças e campanhas com um objetivo e um acompanhamento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg rule" id="faq">
+      <div class="wrap">
+        <div class="center">
+          <h2>Dúvidas frequentes</h2>
+          <p class="muted">Respostas diretas, com o método à vista.</p>
+        </div>
+        <div class="faq-list">
+          <article class="card faq-item">
+            <button type="button">Dá para começar com um orçamento menor? <span>+</span></button>
+            <p class="muted">Dá. A gente reduz o escopo ao que destrava agora — uma landing, um site enxuto ou um lote de peças — e deixa a base pronta para crescer.</p>
+          </article>
+          <article class="card faq-item">
+            <button type="button">Vocês garantem um número de vendas? <span>+</span></button>
+            <p class="muted">Não prometemos número fechado. Mercado, oferta e ticket mudam o resultado. O que combinamos é processo: mensagem clara, página bem estruturada e medição para otimizar.</p>
+          </article>
+          <article class="card faq-item">
+            <button type="button">Já tenho site e identidade. Dá para evoluir? <span>+</span></button>
+            <p class="muted">Dá, e muitas vezes é o caminho mais curto. Ajustamos posicionamento, texto, organização e visual para ficar mais confiável e mais fácil de converter.</p>
+          </article>
+          <article class="card faq-item">
+            <button type="button">Como funciona o diagnóstico? <span>+</span></button>
+            <p class="muted">Você descreve o objetivo e o momento. Devolvemos um plano prático: o que fazer primeiro, por quê, e qual próximo passo faz sentido.</p>
+          </article>
+          <article class="card faq-item">
+            <button type="button">Em quanto tempo entrega? <span>+</span></button>
+            <p class="muted">Depende do escopo e do material que você já tem. No diagnóstico você recebe etapas, prazo e a lista do que precisamos da sua parte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-2 rule" id="blog">
+      <div class="wrap">
+        <div class="center">
+          <h2>Notas da Ênfase</h2>
+          <p class="muted">Textos curtos sobre oferta, página e medição. Sem newsletter lotada de novidade vazia.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card service"><p class="eyebrow">Oferta</p><h3 class="display" style="font-size:16px;margin-top:12px">Uma frase que a pessoa repete</h3><p class="muted">Se o visitante não consegue dizer o que você faz, a página ainda está longa demais.</p></article>
+          <article class="card service"><p class="eyebrow">Página</p><h3 class="display" style="font-size:16px;margin-top:12px">O botão não salva um caminho torto</h3><p class="muted">O clique nasce da ordem: prova, oferta, próximo passo. O botão só confirma.</p></article>
+          <article class="card service"><p class="eyebrow">Medição</p><h3 class="display" style="font-size:16px;margin-top:12px">Três números já orientam</h3><p class="muted">Visita, clique e conversa. O resto pode esperar até esses três fazerem sentido.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg rule" id="contato">
+      <div class="wrap cta-grid">
+        <div>
+          <h2>Se a presença digital precisa melhorar, comece pelo básico bem feito.</h2>
+          <p class="muted" style="margin-top:16px">Conte o objetivo. Você sai com um caminho: o que ajustar primeiro e o que pode esperar.</p>
+          <form class="contact-form" id="contact-form">
+            <input name="nome" required placeholder="Seu nome" aria-label="Seu nome">
+            <input name="contato" required placeholder="WhatsApp ou e-mail" aria-label="WhatsApp ou e-mail">
+            <textarea name="mensagem" required placeholder="Qual é o objetivo agora?" aria-label="Mensagem"></textarea>
+            <div class="btn-row">
+              <button class="btn btn-gold" type="submit"><span>Falar no WhatsApp</span></button>
+              <a class="btn btn-glass" href="#servicos"><span>Ver o que entregamos</span></a>
+            </div>
+          </form>
+          <p class="form-note" id="contact-note" role="status"></p>
+          <p class="fine">Sem compromisso · retorno em horário comercial · conversa direta</p>
+        </div>
+        <aside class="card cta-card">
+          <h3 class="display" style="font-size:14px">O que você recebe no diagnóstico</h3>
+          <ul>
+            <li>Leitura do objetivo e do público</li>
+            <li>O que fazer primeiro e o que pode esperar</li>
+            <li>Escopo com prazo e prioridade</li>
+            <li>O que precisamos de material da sua parte</li>
+            <li>Próximo passo claro, sem pressão</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <svg width="52" height="52" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#f2c21a"/>
+          <circle cx="32" cy="32" r="29" fill="none" stroke="#fff" stroke-width="2.2"/>
+          <text x="31" y="45" text-anchor="middle" font-family="Nunito, sans-serif" font-size="40" font-weight="800" fill="#1e4ed8">e</text>
+          <path fill="#1e4ed8" d="M36.5 11.5 54 18.2 36.5 26.2 41.6 18.4z"/>
+        </svg>
+        <p class="muted">Marca, sites, lojas e criativos para anúncios, com clareza e execução cuidadosa.</p>
+      </div>
+      <div>
+        <h4>Mapa</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#legal">Termos de uso</a></li>
+          <li><a href="#legal">Privacidade</a></li>
+          <li><a href="#legal">Cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p class="muted">Sem spam. Conteúdo direto ao ponto.</p>
+        <form class="news" id="news-form">
+          <input type="email" name="email" required placeholder="Seu e-mail" aria-label="Seu e-mail">
+          <button type="submit">Receber</button>
+        </form>
+        <p class="form-note" id="news-note" role="status"></p>
+      </div>
+    </div>
+    <div class="wrap legal" id="legal">© 2026 Ênfase. Clareza, entrega e acompanhamento. Este é um layout de demonstração, com projetos ilustrativos.</div>
+  </footer>
+
+  <div class="cookie" id="cookie" role="region" aria-label="Aviso de cookies">
+    <p>Usamos apenas o necessário para lembrar tema e este aviso neste navegador. Nenhum pixel de anúncio está ligado nesta demonstração.</p>
+    <button class="btn btn-gold" id="cookie-ok" type="button"><span>Entendido</span></button>
+  </div>
+
+  <div class="float-tools">
+    <button id="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro">◐</button>
+  </div>
+
+  <dialog class="dialog" id="preview">
+    <header>
+      <strong id="preview-title" class="display" style="font-size:14px">Projeto</strong>
+      <button class="icon-btn" id="preview-close" type="button" aria-label="Fechar">✕</button>
+    </header>
+    <div class="body" id="preview-body"></div>
+  </dialog>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
